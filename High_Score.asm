@@ -90,7 +90,7 @@ EE_WRITE ;Writes one byte to EEPROM at EEPROM_ADDR
     
     
     BCF	    EECON1, WREN ; Disable writes on write complete (EEIF set)
-    bcf	    PIR6, EEIF
+    ;bcf	    PIR6, EEIF
     ;bcf	    STATUS, RP0
 
     
